@@ -1,0 +1,6 @@
+selenium
+jieba
+requests
+webdriver-manager
+xmltodict
+openai
