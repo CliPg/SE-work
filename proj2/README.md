@@ -4,6 +4,14 @@
 
     用于爬取指定关键词的视频的弹幕，结果保存于`dataset/barrage`。
 
+- **vocab_generator**
+    
+    使用jieba对弹幕进行分词。
+
+- **vocab_distiller**
+
+    使用LLM/sentence_transformer筛选与ai技术应用相关的弹幕。
+
 
 ## Start
 
@@ -24,3 +32,4 @@
     ```
     python -m vocab_distiller [llm | sentence]
     ```
+    如需使用LLM，需要在系统配置你的阿里云大模型的API_KEY或直接在vocab_distiller进行修改。

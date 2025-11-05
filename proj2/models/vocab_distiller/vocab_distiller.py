@@ -7,7 +7,7 @@ from sentence_transformers import SentenceTransformer, util
 def distill_vocab_with_llm(input_file, output_file, model_name, batch_size=30):
 
     client = OpenAI(
-        api_key="your_api_key",
+        api_key=os.getenv("DASHSCOPE_API_KEY"),
         base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
     )
 
