@@ -4,3 +4,6 @@ requests
 webdriver-manager
 xmltodict
 openai
+langchain-community
+dashscope
+chromadb

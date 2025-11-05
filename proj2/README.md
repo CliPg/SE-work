@@ -39,3 +39,7 @@
     python -m vocab_distiller [llm | sentence]
     ```
     如需使用LLM，需要在系统配置你的阿里云大模型的API_KEY或直接在vocab_distiller进行修改。
+
+- **生成词云**
+  ```
+  python -m wordcloud_generator
