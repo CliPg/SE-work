@@ -18,3 +18,9 @@
   cd models
   python -m vocab_generator
   ```
+
+- **对弹幕进行蒸馏**
+    提供用sentence_transformer和LLM自动筛选两种方式。
+    ```
+    python -m vocab_distiller [llm | sentence]
+    ```
