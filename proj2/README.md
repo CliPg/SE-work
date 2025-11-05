@@ -15,6 +15,12 @@
 
 ## Start
 
+- **环境配置**
+
+    ```
+    pip install -r requirements
+    ```
+
 - **爬取弹幕**
     ```
     cd models
