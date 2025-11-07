@@ -11,6 +11,7 @@ def generate_vocab(input_file: str, output_file: str):
         input_file (str): 输入 JSON 行文件路径（每行一个视频的弹幕数据）
         output_file (str): 输出词表文件路径
     """
+    jieba.enable_parallel(4)
     all_words = []
 
     # 1. 按行读取 JSON 文件
@@ -33,7 +34,7 @@ def generate_vocab(input_file: str, output_file: str):
                     all_words.extend(words)
 
             except json.JSONDecodeError:
-                print(f"⚠️ 第 {line_num} 行不是合法 JSON，已跳过")
+                print(f"第 {line_num} 行不是合法 JSON，已跳过")
 
     # 3. 统计词频
     word_freq = Counter(all_words)

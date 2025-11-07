@@ -60,6 +60,6 @@
 
 - **依据弹幕内容回答问题**
   ```
-  cd proj2
-  python -m scripts
+  cd scripts
+  python3 conclusion.py
   ```
